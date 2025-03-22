@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Visualizations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Visualizations</h1>
+        <div class="viz-section">
+            <h2>Histograms</h2>
+            <img src="{{ url_for('static', filename='images/histograms.png') }}" alt="Histograms" class="viz-image">
+        </div>
+        <div class="viz-section">
+            <h2>Density Plots</h2>
+            <img src="{{ url_for('static', filename='images/density.png') }}" alt="Density Plots" class="viz-image">
+        </div>
+        <div class="viz-section">
+            <h2>Correlation Matrix</h2>
+            <img src="{{ url_for('static', filename='images/correlation.png') }}" alt="Correlation Matrix" class="viz-image">
+        </div>
+        <a href="{{ url_for('home') }}" class="back-btn">Back to Prediction</a>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
